@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlaneController
   moveSpeed: 0.05
   deceleration: 1
-  kezurikasu: {fileID: 0}
+  kezurikasu: {fileID: 1570815401}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,53 +924,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8927271897247382193, guid: ad357cd8b10840940998a588bba906cc, type: 3}
   m_PrefabInstance: {fileID: 1212438308}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1422528749
+--- !u!1 &1570815401 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2429380707026449801, guid: 9bdaa9d58bf7ab944ae309476f3e4f4b, type: 3}
+  m_PrefabInstance: {fileID: 885280995}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1422528751}
-  - component: {fileID: 1422528750}
-  m_Layer: 0
-  m_Name: PlaneController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1422528750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422528749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5209394e42a5ee4439fe6e4c7e9da219, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaneController
-  moveSpeed: 0.01
-  deceleration: 1
-  kezurikasu: {fileID: 0}
---- !u!4 &1422528751
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422528749}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.10343, y: 0.26812, z: -0.05719}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889107743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,7 +1100,6 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 885280995}
   - {fileID: 1964602097}
-  - {fileID: 1422528751}
   - {fileID: 1184417019}
   - {fileID: 1162399596}
   - {fileID: 2051168530}

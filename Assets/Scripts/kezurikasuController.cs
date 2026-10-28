@@ -10,7 +10,9 @@ public class kezurikasuController : MonoBehaviour
 	float increaseAmount;
 	Vector3 position;
 	Vector3 ePos;
+	Vector3 sPos;
 	Vector3 Positioning;
+	Vector3 nowdiff;
 	float diff;
 	Vector3 velocity;
 	public void SetVelocity(Vector3 v) {  velocity = v; }
@@ -24,19 +26,27 @@ public class kezurikasuController : MonoBehaviour
 		// 端までの距離の計算
 		ePos = endPos.transform.localPosition;		// 端の位置
 		Positioning = Pos.transform.localPosition;  // 最初の鉋の位置
-		diff = ePos.x - Positioning.x; // 差分
-		increaseAmount = diff / 1000; // 動くたびに伸びる長さ
+		diff = ePos.x - Positioning.x; // 端までの距離
+		increaseAmount = diff / 1000; // 動くたびに伸びる長さ(距離の長さの0.1%)
+
+		// スタート地点の取得
+		sPos = startPos.transform.localPosition;
 	}
 
     // Update is called once per frame
     void Update()
     {
+		//float ratio = (Positioning.x - sPos.x) /(ePos.x - sPos.x);
 		// クリックしたときのスケール取得
 		Vector3 currentScale = transform.localScale;
 
 		// 動いた距離を出す
-		Positioning = Pos.transform.localPosition;  // 最初の鉋の位置
-		float x = Positioning.x / diff; // 仮置き
+		Positioning = Pos.transform.localPosition;  // 現在の鉋の位置
+		nowdiff = Positioning - sPos; // スタート地点と鉋の位置の差
+
+		Debug.Log(Positioning);
+
+		float x = nowdiff.x / diff; // 
 		int times = (int)x;  // 伸ばす回数
 
 		// Xのスケールを大きくしたVector3の作成
